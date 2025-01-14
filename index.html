@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/@rive-app/canvas@1.0.102"></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        new rive.Rive({
+            src: 'YOUR_RIV_FILE_URL_HERE',
+            canvas: document.getElementById('canvas'),
+            autoplay: true,
+            fit: rive.Fit.contain,
+            onLoad: () => {
+                // Animation is ready to play
+            }
+        });
+    </script>
+</body>
+</html>
